@@ -14,7 +14,7 @@ branch 'master'
 }
 steps {
 script {
-app = docker.build("[dockerhub username]/train-schedule")
+app = docker.build("kswetha02/train-schedule")
 app.inside {
 sh 'echo $(curl localhost:8080)'
 }
